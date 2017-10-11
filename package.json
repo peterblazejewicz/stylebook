@@ -1,0 +1,9 @@
+{
+  "name": "stylebook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/peterblazejewicz/stylebook.git",
+  "author": "Peter Blazejewicz",
+  "private": true,
+  "license": "MIT"
+}
