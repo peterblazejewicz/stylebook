@@ -7,7 +7,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "docs": "node ./build/markdown-it.js docs/**/*md www/",
+    "docs": "node build/markdown-it.js \"docs/**/*.md\" \"www/\"",
     "build": "",
     "dev": "",
     "start": ""
