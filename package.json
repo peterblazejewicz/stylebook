@@ -7,9 +7,6 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "copycopy": "^0.0.2",
-    "csscompile": "^0.2.0",
     "yarn": "^1.2.0"
   }
 }
