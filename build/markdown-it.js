@@ -37,5 +37,12 @@ const main = async ({input, output}) => {
     throw error;
   }
 }
+
+if (argv._.length !== 2) {
+  console.error('USAGE: {input directory} {output directory}')
+  console.error('Got arguments:', argv._)
+  process.exit(1)
+}
+
 let [input, output] = argv._;
 main({input, output});
