@@ -13,6 +13,8 @@
     "start": ""
   },
   "devDependencies": {
+    "@stencil/dev-server": "^0.0.17",
+    "@stencil/utils": "^0.0.4",
     "@types/fs-extra": "^4.0.2",
     "@types/highlight.js": "^9.1.10",
     "@types/markdown-it": "^0.0.4",
@@ -24,5 +26,9 @@
     "markdown-it": "^8.4.0",
     "yargs": "^9.0.1",
     "yarn": "^1.2.0"
+  },
+  "dependencies": {
+    "@stencil/core": "^0.0.5",
+    "@stencil/router": "^0.0.16"
   }
 }
