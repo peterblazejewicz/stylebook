@@ -58,4 +58,5 @@ typings/
 .env
 
 # docs output
-www/docs/
+!www/favicon.ico
+www/

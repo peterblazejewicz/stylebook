@@ -1,9 +1,8 @@
 exports.config = {
   bundles: [
-    { components: [] },
-    { components: [] }
-  ],
-  collections: [{ name: '@stencil/router' }]
+    { components: ['stylebook-site'] }
+    ],
+    collections: [{ name: '@stencil/router' }]
 };
 
 exports.devServer = {

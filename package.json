@@ -7,11 +7,12 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "build": "docs && stencil build --prerender",
     "clean": "rimraf www/docs/",
     "docs": "node build/markdown-it.js \"docs/**/*.md\" \"www/\"",
-    "build": "",
-    "dev": "",
-    "start": ""
+    "dev": "npm run docs && sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
   },
   "devDependencies": {
     "@stencil/dev-server": "^0.0.17",
