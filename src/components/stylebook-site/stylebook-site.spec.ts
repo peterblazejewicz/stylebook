@@ -20,7 +20,7 @@ describe('stylebook-site', () => {
 
     it('should work without props', async () => {
       await flush(element);
-      expect(element.textContent).toEqual('Hello World!');
+      expect(element.textContent).toEqual('Stylebook');
     })
 
   });
