@@ -1,10 +1,10 @@
 import { flush, render } from "@stencil/core/testing";
 
-import { App } from './sttylebook-site';
+import { StylebookSite } from './sttylebook-site';
 
 describe('stylebook-site', () => {
   it('should build', () => {
-    expect(new App()).toBeTruthy();
+    expect(new StylebookSite()).toBeTruthy();
   })
 
   describe('rendering', () => {
@@ -13,7 +13,7 @@ describe('stylebook-site', () => {
 
     beforeEach(async () => {
       element = await render({
-        components: [App],
+        components: [StylebookSite],
         html: '<stylebook-site></stylebook-site>'
       });
     });
