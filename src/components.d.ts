@@ -6,7 +6,7 @@
 
 import '@stencil/router';
 
-import { StylebookSite as StylebookSite } from './components/stylebook-site/sttylebook-site';
+import { StylebookSite as StylebookSite } from './components/stylebook-site/stylebook-site';
 
 interface HTMLStylebookSiteElement extends StylebookSite, HTMLElement {
 }
