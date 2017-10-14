@@ -1,1 +1,85 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.stylebook-navbar {
+    position: sticky;
+    top: 0;
+    z-index: $zindex-sticky;
+}
+
+.stylebook-sidebar {
+    position: sticky;
+    top: 4rem;
+    z-index: $zindex-sticky;
+}
+
+.stylebook-sidenav {
+    display: block;
+}
+
+.stylebook-links {
+    padding: {
+        top: 1rem;
+        bottom: 1rem;
+    }
+    margin: {
+        right: -($grid-gutter-width/2);
+        left: -($grid-gutter-width/2);
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.stylebook-toc-link {
+    display: block;
+    padding: .25rem 1.5rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .65);
+    &:hover {
+        color: rgba(0, 0, 0, .85);
+        text-decoration: none;
+    }
+}
+
+.stylebook-toc-item {
+    &.active {
+        margin-bottom: 1rem;
+        &:not(:first-child) {
+            margin-top: 1rem;
+        }
+        >.bd-toc-link {
+            color: rgba(0, 0, 0, .85);
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        >.bd-sidenav {
+            display: block;
+        }
+    }
+}
+
+.stylebook-sidebar .nav>li>a {
+    display: block;
+    padding: .25rem 1.5rem;
+    font-size: 90%;
+    color: rgba(0, 0, 0, .65);
+}
+
+.stylebook-sidebar .nav>li>a:hover {
+    color: rgba(0, 0, 0, .85);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.stylebook-sidebar .nav>.active>a,
+.stylebook-sidebar .nav>.active:hover>a {
+    font-weight: 500;
+    color: rgba(0, 0, 0, .85);
+    background-color: transparent;
+}

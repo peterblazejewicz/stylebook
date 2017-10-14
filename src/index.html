@@ -17,13 +17,25 @@
 </head>
 
 <body>
-  <header class="navbar navbar-expand navbar-light bg-light flex-column flex-md-row">
+  <header class="navbar navbar-expand navbar-light bg-light flex-column flex-md-row stylebook-navbar">
     <a href="#" class="navbar-brand mr-0 mr-md-2">Stylebook</a>
   </header>
   <div class="container-fluid">
     <div class="row flex-xl-nowrap">
-      <div class="col-12 col-md-3 col-xl-2 sidebar">
-        sidebar
+      <div class="col-12 col-md-3 col-xl-2 stylebook-sidebar">
+        <nav class="collapse stylebook-links">
+          <div class="stylebook-toc-item active">
+            <a href="/" class="stylebook-toc-link">Colors</a>
+              <ul class="nav stylebook-sidenav">
+                <li class="stylebook-sidenav-active">
+                  <a href="/">Overview</a>
+                </li>
+                <li class="stylebook-sidenav-active">
+                    <a href="/">Swatches</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
       </div>
       <main class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5">
         <stylebook-site></stylebook-site>
